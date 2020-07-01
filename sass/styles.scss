@@ -1,0 +1,709 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+$color:#1746CF;
+$color-one: #FF5D00;
+$color-two: #02BDE7;
+$color-three:#084482;
+$dark-color: rgba(34, 34, 34, 0.67);
+$white-color:#ffffff;
+$off-white:#F6F8FE;
+
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    font-family: 'Nunito', sans-serif;
+}
+
+.colored-bg {
+    background: #F6F8FE;
+
+}
+
+.flex {
+    display: flex;
+}
+
+
+hr {
+    border: 3px solid $color-one;
+    width: 20rem;
+    margin-bottom: 4rem;
+}
+
+.white-colored {
+    color: $white-color;
+}
+
+// NAVIGATION
+
+// .navbar {
+//     margin: 1rem 0;
+// }
+
+.navbar-light .navbar-brand {
+    color: $color-three;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: $color-three;
+    padding: 2rem;
+}
+
+.navbar-light .navbar-nav .navbar--first-link {
+    color: $color-one;
+}
+
+.nav-link--button {
+    background: $color-two;
+    margin-right: 1rem;
+}
+
+.colored {
+    color: $color-two;
+    margin-left: 2.5rem;
+}
+
+// INTRO
+
+.intro {
+    background-image: url('../images/image (4).png');
+}
+
+// this SO helped with the background image
+//https://stackoverflow.com/a/14029328/12716823
+
+.intro--col-1 {
+    position: absolute;
+    z-index: 1;
+    margin-left: 2rem;
+
+    h1 {
+        padding-top: 6rem;
+        color: $color-three;
+    }
+
+    p {
+        color: $dark-color;
+        padding-top: 1rem;
+    }
+}
+
+.intro--col-2 img {
+    width: 600px;
+    margin-left: 45rem;
+    margin-top: 1rem;
+}
+
+.flex.intro button {
+    margin-right: 5rem;
+    margin-top: 3rem;
+}
+
+// ICON
+
+.flex.icons {
+    align-items: center;
+    margin: 3rem;
+    justify-content: space-evenly;
+}
+
+.flex.icons img {
+    width: 3rem;
+
+
+}
+
+// INFO
+
+.info {
+
+
+    h1 {
+        text-align: center;
+        padding-top: 4rem;
+        color: $color-three;
+    }
+
+    p {
+        text-align: center;
+        color: $dark-color;
+    }
+
+
+    .row .col-lg-4 span {
+        text-transform: uppercase;
+
+    }
+
+    .row .col-lg-4 h6 {
+        padding-top: 1rem;
+        text-align: center;
+        text-transform: uppercase;
+        color: #212529;
+    }
+}
+
+//MORE-INFO
+
+.more-info {
+    margin: 5rem;
+}
+
+.more-info h1 {
+    text-align: center;
+    color: $color-three;
+    margin-top: 2rem;
+}
+
+.more-info p {
+    text-align: center;
+    color: $dark-color;
+}
+
+.nav--header {
+    width: 30rem;
+    background: $color-one;
+
+}
+
+.nav--header.nav--two {
+    background: $white-color;
+
+    button {
+        color: $color-two;
+        border: 1px solid $color-two;
+    }
+
+
+    button:hover {
+        background: $color-two;
+        color: $white-color;
+    }
+
+    .more-info-flex {
+        color: $dark-color;
+    }
+
+
+    .green--colored {
+        color: $color-two;
+    }
+
+    .pages {
+        color: $color-one;
+    }
+
+    h1 {
+        margin: 0;
+        padding: 0;
+    }
+}
+
+.nav--header.nav--three {
+    background: $white-color;
+
+    .green--colored {
+        color: $color-two;
+    }
+
+    .more-info-right {
+        color: $dark-color;
+        position: relative;
+        right: 6rem;
+    }
+
+    .more-info-left {
+        color: $dark-color;
+        position: relative;
+        left: 6rem;
+    }
+}
+
+.nav--header.nav--four {
+    background: #000;
+    color: $white-color;
+
+    button:hover {
+        background: $white-color;
+        color: #000;
+    }
+}
+
+.nav--body {
+    width: 30rem;
+    margin: .5rem 0;
+    height: 10rem;
+    background: $off-white;
+
+
+    h1 {
+        margin: 0;
+        padding: 0;
+        color: $dark-color;
+        text-transform: capitalize;
+        font-size: 1rem;
+        text-align: center;
+        padding-top: 4rem;
+    }
+
+}
+
+.more-info-flex {
+    justify-content: space-evenly;
+    padding-top: 1rem;
+    color: white;
+    font-size: .7rem;
+
+    button {
+        margin-bottom: .5rem;
+        border: 1px solid $white-color;
+        color: $white-color;
+    }
+
+    button:hover {
+        border: 1px solid $white-color;
+        background: $white-color;
+        color: $color-one;
+    }
+}
+
+.more-info-span {
+    margin-left: 0.4rem;
+    margin-right: 5rem;
+    font-size: 1rem;
+    margin-top: .4rem;
+}
+
+.more-info-icon {
+    margin-left: .3rem;
+}
+
+.more-info-left {
+    margin-top: .3rem;
+}
+
+// TEMPLATE FEATURES
+
+.template-features {
+    // margin: 5rem;
+
+    h1 {
+        color: $color-three;
+        text-align: center;
+    }
+
+    p {
+        color: $dark-color;
+        text-align: center;
+    }
+
+    .row {
+        margin: 0 5rem;
+        padding: 2rem 0;
+    }
+
+    .row .big-img {
+        width: 2rem;
+
+    }
+
+    .col-lg-4 {
+        background: $white-color;
+        max-width: 20%;
+        height: 4rem;
+        margin: auto;
+
+    }
+
+    .col-lg-4 span {
+        margin-left: 1rem;
+        position: relative;
+        top: 1rem;
+    }
+
+    .col-lg-4 img {
+        margin-left: 1rem;
+        position: relative;
+        top: 1rem;
+    }
+
+    button {
+        margin: 3rem 0 3rem 38rem;
+        border: none;
+        padding: 1rem 2rem;
+    }
+
+}
+
+// PRICING
+
+.pricing {
+    h1 {
+        color: $color-three;
+        text-align: center;
+        margin-top: 2rem;
+    }
+
+    p {
+        color: $dark-color;
+        text-align: center;
+    }
+
+    .row {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+
+    .row--cover {
+        margin: 5rem;
+    }
+
+    .card {
+        text-align: center;
+        color: $dark-color;
+        // border-color:$off-white ;
+        box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .1);
+
+    }
+
+    .card-header {
+        background-color: $white-color;
+        border-bottom: none;
+        color: $color-three;
+
+        h1 {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+    }
+
+    li:last-child {
+        color: $color-three;
+        font-weight: bold;
+    }
+
+    button {
+        width: 50%;
+        margin: auto;
+        border: none;
+        background: $color-two;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        color: $white-color;
+    }
+
+    button:hover {
+        background: $white-color;
+        color: $color-three;
+        border: 1px solid $color-three;
+    }
+
+    .business--card {
+
+        .business--color,
+        .list-group-item:last-child {
+            background-color: $color-two;
+            color: $white-color;
+        }
+
+        .bg-color-business {
+            background-color: $color-two;
+        }
+
+        .list-group-item {
+            position: relative;
+            display: block;
+            color: $white-color;
+            padding: .75rem 1.25rem;
+            border: .3px solid $white-color;
+        }
+
+        button {
+            background: $white-color;
+            color: $color-two;
+        }
+
+        button:hover {
+            background: $color-two;
+            color: $white-color;
+            border: 1px solid $white-color;
+        }
+
+    }
+
+
+}
+
+// REVIEWS
+
+.reviews {
+    h1 {
+        text-align: center;
+        color: $color-three;
+    }
+
+    p {
+        text-align: center;
+        color: $dark-color;
+    }
+
+    .row {
+        margin: 0;
+        padding: 0;
+    }
+
+    .reviews-row-cover {
+        margin: 5rem;
+        margin-left: 15rem;
+    }
+
+
+    .col-lg-4 h4 {
+        color: $color-three;
+    }
+
+    // this SO link was very helpful with :first-child and :first-of-type
+    //https://stackoverflow.com/a/4505716/12716823
+    .col-lg-4 h6.first {
+        color: $color-three;
+    }
+
+    .col-lg-4 h6.last {
+        margin-left: 3rem;
+    }
+}
+
+// FOOTER
+
+footer {
+    padding: 5rem;
+    background: $color-two;
+
+    .col-lg-6 h1 {
+        color: $white-color;
+        text-transform: capitalize;
+    }
+
+    .btn {
+        margin-left: 20rem;
+        margin-top: 1rem;
+        background-color: $white-color;
+        color: $color-two;
+        border: none;
+    }
+
+    .col-lg-6 .btn-lg:hover {
+        color: $color-two;
+        border: 1px solid $color-two;
+        background: $white-color;
+
+    }
+}
+
+// DESIGNING SCROLL BAR
+
+/* width */
+::-webkit-scrollbar {
+    width: 1em;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: $color-two;
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: $color-two;
+}
+
+// RESPONSIVENESS
+
+@media (min-width: 2560px) {
+    .intro--col-2 img {
+        width: 1000px;
+        position: relative;
+        left: 40rem;
+        // margin-top: 1rem;
+    }
+
+    .nav-link--button {
+        background: $color-two;
+        margin-right: 7rem;
+    }
+
+    .info {
+
+        .row {
+            padding-right: 0px !important;
+            margin-right: 0px !important;
+        }
+
+        .col-lg-4 {
+            width: 50%;
+            margin: 0 auto;
+
+        }
+
+        .row .col-lg-4 h6 {
+            padding: 2rem;
+            text-align: left;
+            text-transform: uppercase;
+            color: #212529;
+        }
+    }
+
+
+    //MORE-INFO
+
+    .more-info {
+        margin: 5rem;
+    }
+
+    .more-info h1 {
+        text-align: center;
+        color: $color-three;
+        margin-top: 2rem;
+    }
+
+    .more-info p {
+        text-align: center;
+        color: $dark-color;
+    }
+
+    .nav--header {
+        width: 30rem;
+        background: $color-one;
+
+    }
+
+    .nav--header.nav--two {
+        background: $white-color;
+
+        button {
+            color: $color-two;
+            border: 1px solid $color-two;
+        }
+
+
+        button:hover {
+            background: $color-two;
+            color: $white-color;
+        }
+
+        .more-info-flex {
+            color: $dark-color;
+        }
+
+
+        .green--colored {
+            color: $color-two;
+        }
+
+        .pages {
+            color: $color-one;
+        }
+
+        h1 {
+            margin: 0;
+            padding: 0;
+        }
+    }
+
+    .nav--header.nav--three {
+        background: $white-color;
+
+        .green--colored {
+            color: $color-two;
+        }
+
+        .more-info-right {
+            color: $dark-color;
+            position: relative;
+            right: 6rem;
+        }
+
+        .more-info-left {
+            color: $dark-color;
+            position: relative;
+            left: 6rem;
+        }
+    }
+
+    .nav--header.nav--four {
+        background: #000;
+        color: $white-color;
+
+        button:hover {
+            background: $white-color;
+            color: #000;
+        }
+    }
+
+    .nav--body {
+        width: 30rem;
+        margin: .5rem 0;
+        height: 10rem;
+        background: $off-white;
+
+
+        h1 {
+            margin: 0;
+            padding: 0;
+            color: $dark-color;
+            text-transform: capitalize;
+            font-size: 1rem;
+            text-align: center;
+            padding-top: 4rem;
+        }
+
+    }
+
+    .more-info-flex {
+        justify-content: space-evenly;
+        padding-top: 1rem;
+        color: white;
+        font-size: .7rem;
+
+        button {
+            margin-bottom: .5rem;
+            border: 1px solid $white-color;
+            color: $white-color;
+        }
+
+        button:hover {
+            border: 1px solid $white-color;
+            background: $white-color;
+            color: $color-one;
+        }
+    }
+
+    .more-info-span {
+        margin-left: 0.4rem;
+        margin-right: 5rem;
+        font-size: 1rem;
+        margin-top: .4rem;
+    }
+
+    .more-info-icon {
+        margin-left: .3rem;
+    }
+
+    .more-info-left {
+        margin-top: .3rem;
+    }
+}
